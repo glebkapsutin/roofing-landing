@@ -1,13 +1,50 @@
 ﻿<!DOCTYPE html>
-
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кровля и Фасады</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+    <!-- Подключение шрифтов Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Применяем шрифты через Tailwind */
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
 
+        .font-open-sans {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-open-sans">
+    <!-- Header -->
+    <header class="bg-black text-white fixed top-0 w-full shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Логотип -->
+            <div>
+                <a href="#">
+                    <img src="assets/img/logo.jpg" alt="G-GROUP Кровля и Фасады" class="h-16 md:h-20 object-contain">
+                </a>
+            </div>
+            <!-- Навигация -->
+            <nav>
+                <ul class="flex space-x-4 md:space-x-6">
+                    <li><a href="#home" class="text-sm md:text-base hover:text-orange-500 transition duration-300 font-montserrat">Главная</a></li>
+                    <li><a href="#services" class="text-sm md:text-base hover:text-orange-500 transition duration-300 font-montserrat">Услуги</a></li>
+                    <li><a href="#portfolio" class="text-sm md:text-base hover:text-orange-500 transition duration-300 font-montserrat">Портфолио</a></li>
+                    <li><a href="#contact" class="text-sm md:text-base hover:text-orange-500 transition duration-300 font-montserrat">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- Контактная информация -->
+            <div class="flex items-center space-x-2 md:space-x-4">
+                <a href="tel:+79991234567" class="text-xs md:text-sm hover:text-orange-500 transition duration-300 font-montserrat">+7 (999) 123-45-67</a>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-sm font-semibold py-1 md:py-2 px-2 md:px-4 rounded-lg transition duration-300 font-montserrat">
+                    Заказать звонок
+                </button>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
