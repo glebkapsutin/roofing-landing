@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Подключение шрифтов Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <!-- Подключение Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         /* Применяем шрифты через Tailwind */
         .font-montserrat {
@@ -46,5 +48,19 @@
             </div>
         </div>
     </header>
+
+    <!-- Герой-секция -->
+    <section id="home" class="min-h-screen bg-gradient-to-r from-gray-900 py-32 to-black text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center bg-black bg-opacity-50 rounded-lg">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 font-montserrat animate__animated animate__fadeInDown">
+                Качественный монтаж кровли и фасадов <span class="text-orange-500">в Москве</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 font-open-sans animate__animated animate__fadeInUp animate__delay-1s">Создаём надёжные и стильные решения для вашего дома</p>
+            <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 font-montserrat">Оставить заявку</a>
+                <a href="#services" class="ml-4 bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-6 rounded-lg transition duration-300 font-montserrat">Узнать больше</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
