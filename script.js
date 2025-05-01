@@ -51,4 +51,196 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Логика для галереи на странице
+    const galleries = document.querySelectorAll('.portfolio-gallery-container');
 
+    galleries.forEach(container => {
+        const gallery = container.querySelector('.portfolio-gallery');
+        const prevBtn = container.querySelector('.prev-btn');
+        const nextBtn = container.querySelector('.next-btn');
+        const cards = gallery.querySelectorAll('.portfolio-card');
+        let currentIndex = 0;
+        let cardsPerView = 3; // По умолчанию показываем 3 карточки
+
+        // Проверка, что кнопки найдены
+        if (!prevBtn) {
+            console.error('Кнопка "влево" (.prev-btn) не найдена в контейнере:', container);
+            return;
+        }
+        if (!nextBtn) {
+            console.error('Кнопка "вправо" (.next-btn) не найдена в контейнере:', container);
+            return;
+        }
+
+        // Явно устанавливаем видимость кнопки "влево" при инициализации
+        prevBtn.style.opacity = '1';
+        prevBtn.style.visibility = 'visible';
+
+        // Определяем количество видимых карточек в зависимости от ширины экрана
+        function updateCardsPerView() {
+            if (window.innerWidth <= 640) {
+                cardsPerView = 1;
+            } else if (window.innerWidth <= 1024) {
+                cardsPerView = 2;
+            } else {
+                cardsPerView = 3;
+            }
+            currentIndex = Math.min(currentIndex, Math.max(0, cards.length - cardsPerView)); // Корректируем индекс
+            updateGallery();
+            updateButtonVisibility();
+        }
+
+        // Обновляем состояние кнопок
+        function updateButtonVisibility() {
+            // Кнопка "влево" всегда видима, но может быть неактивной
+            if (currentIndex === 0) {
+                prevBtn.classList.add('disabled');
+            } else {
+                prevBtn.classList.remove('disabled');
+            }
+
+            // Управляем кнопкой "вправо"
+            if (currentIndex < cards.length - cardsPerView) {
+                nextBtn.classList.add('visible');
+            } else {
+                nextBtn.classList.remove('visible');
+            }
+        }
+
+        // Обновляем позицию галереи
+        function updateGallery() {
+            const cardWidth = cards[0].offsetWidth + 24; // Учитываем gap (1.5rem = 24px)
+            const offset = -currentIndex * cardWidth;
+            gallery.style.transform = `translateX(${offset}px)`;
+        }
+
+        // Предыдущие карточки
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateGallery();
+                updateButtonVisibility();
+            }
+        });
+
+        // Следующие карточки
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < cards.length - cardsPerView) {
+                currentIndex++;
+                updateGallery();
+                updateButtonVisibility();
+            }
+        });
+
+        // Вызываем updateButtonVisibility после завершения анимации листания
+        gallery.addEventListener('transitionend', () => {
+            updateButtonVisibility();
+        });
+
+        // Обновляем при изменении размера окна
+        window.addEventListener('resize', updateCardsPerView);
+
+        // Инициализация
+        updateCardsPerView();
+    });
+
+    // Логика для модального окна
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+    let modal = null;
+    let currentImages = [];
+    let currentIndex = 0;
+
+    portfolioCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const category = card.closest('.portfolio-gallery').dataset.category;
+            const index = parseInt(card.dataset.index, 10);
+
+            // Собираем все изображения в текущей категории
+            const categoryCards = document.querySelectorAll(`.portfolio-gallery[data-category="${category}"] .portfolio-card img`);
+            currentImages = Array.from(categoryCards).map(img => ({
+                src: img.src,
+                alt: img.alt
+            }));
+            currentIndex = index;
+
+            // Показываем модальное окно
+            showModal();
+        });
+    });
+
+    // Функция отображения модального окна
+    function showModal() {
+        if (modal) {
+            document.body.removeChild(modal);
+        }
+
+        modal = document.createElement('div');
+        modal.classList.add('modal');
+        modal.innerHTML = `
+            <div class="modal-content">
+                <button class="modal-nav-btn modal-prev-btn">❮</button>
+                <img src="${currentImages[currentIndex].src}" alt="${currentImages[currentIndex].alt}">
+                <button class="modal-nav-btn modal-next-btn">❯</button>
+                <button class="modal-close-btn">×</button>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        // Обработчики событий
+        const closeBtn = modal.querySelector('.modal-close-btn');
+        const prevBtn = modal.querySelector('.modal-prev-btn');
+        const nextBtn = modal.querySelector('.modal-next-btn');
+
+        closeBtn.addEventListener('click', closeModal);
+        prevBtn.addEventListener('click', showPrevImage);
+        nextBtn.addEventListener('click', showNextImage);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', handleKey);
+    }
+
+    // Показ предыдущего изображения
+    function showPrevImage() {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        updateModalImage();
+    }
+
+    // Показ следующего изображения
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        updateModalImage();
+    }
+
+    // Обновление изображения в модальном окне
+    function updateModalImage() {
+        const modalImg = modal.querySelector('img');
+        modalImg.src = currentImages[currentIndex].src;
+        modalImg.alt = currentImages[currentIndex].alt;
+    }
+
+    // Закрытие модального окна
+    function closeModal() {
+        if (modal) {
+            document.body.removeChild(modal);
+            modal = null;
+            document.removeEventListener('keydown', handleKey);
+        }
+    }
+
+    // Обработка нажатий клавиш
+    function handleKey(e) {
+        if (e.key === 'Escape') {
+            closeModal();
+        } else if (e.key === 'ArrowLeft') {
+            showPrevImage();
+        } else if (e.key === 'ArrowRight') {
+            showNextImage();
+        }
+    }
+});
