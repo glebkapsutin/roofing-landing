@@ -10,32 +10,30 @@
     });
 });
 
-const menuButton = document.getElementById('mobile-menu-button');
+
+const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 const menuIcon = document.getElementById('menu-icon');
 const closeIcon = document.getElementById('close-icon');
 
-menuButton.addEventListener('click', () => {
-    const isOpen = !mobileMenu.classList.contains('hidden');
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const isHidden = mobileMenu.classList.contains('hidden');
 
-    // Переключаем иконки
-    menuIcon.classList.toggle('hidden', !isOpen);
-    closeIcon.classList.toggle('hidden', isOpen);
+    menuIcon.classList.toggle('hidden', !isHidden);
+    closeIcon.classList.toggle('hidden', isHidden);
 
-    // Переключаем меню
-    if (isOpen) {
-        mobileMenu.classList.add('hidden');
-        mobileMenu.classList.remove('translate-y-0', 'opacity-100');
-        mobileMenu.classList.add('-translate-y-full', 'opacity-0');
+    if (!isHidden) {
+        mobileMenu.classList.remove('opacity-0', '-translate-y-full');
+        mobileMenu.classList.add('opacity-100', 'translate-y-0');
     } else {
-        mobileMenu.classList.remove('hidden');
-        // Задержка для плавной анимации
-        setTimeout(() => {
-            mobileMenu.classList.remove('-translate-y-full', 'opacity-0');
-            mobileMenu.classList.add('translate-y-0', 'opacity-100');
-        }, 10);
+        mobileMenu.classList.remove('opacity-100', 'translate-y-0');
+        mobileMenu.classList.add('opacity-0', '-translate-y-full');
     }
 });
+
+
+        
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -51,6 +49,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Логика для галереи на странице
     const galleries = document.querySelectorAll('.portfolio-gallery-container');

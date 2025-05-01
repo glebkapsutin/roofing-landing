@@ -14,7 +14,6 @@
 </head>
 
 <body class="font-open-sans">
-    <!-- Header -->
     <header class="fixed top-0 w-full z-50 bg-[#0A0A0A]">
         <div class="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
             <a href="#home" class="flex items-center space-x-3">
@@ -26,64 +25,47 @@
             <nav class="hidden md:flex">
                 <ul class="flex space-x-4 lg:space-x-6">
                     <li>
-                        <a href="#home"
-                           class="text-sm lg:text-base font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Главная</a>
+                        <a href="#home" class="text-sm lg:text-base font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Главная</a>
                     </li>
                     <li>
-                        <a href="#services"
-                           class="text-sm lg:text-base font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Услуги</a>
+                        <a href="#services" class="text-sm lg:text-base font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Услуги</a>
                     </li>
                     <li>
-                        <a href="#portfolio"
-                           class="text-sm lg:text-base font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Портфолио</a>
+                        <a href="#portfolio" class="text-sm lg:text-base font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Портфолио</a>
                     </li>
                     <li>
-                        <a href="#contact"
-                           class="text-sm lg:text-base font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Контакты</a>
+                        <a href="#contact" class="text-sm lg:text-base font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
-                <a href="tel:+79991234567"
-                   class="btn-primary py-1 lg:py-2 px-2 lg:px-4 text-sm font-montserrat">Заказать звонок</a>
+                <a href="tel:+79268281855" class="btn-primary py-1 lg:py-2 px-2 lg:px-4 text-sm font-montserrat">Заказать звонок</a>
             </div>
-            <button id="mobile-menu-button" class="md:hidden focus:outline-none text-white"
-                    aria-label="Toggle mobile menu">
-                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                     stroke="currentColor" class="w-6 h-6">
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none text-white" aria-label="Toggle mobile menu">
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                     stroke="currentColor" class="w-6 h-6 hidden">
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 hidden">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
         </div>
-        <div id="mobile-menu"
-             class="bg-[#0A0A0A] hidden md:hidden absolute top-full left-0 w-full shadow-lg transition-all duration-300 transform translate-y-[-100%] opacity-0">
+        <div id="mobile-menu" class="bg-[#0A0A0A] hidden md:hidden absolute top-full left-0 w-full shadow-lg transition-all duration-300 transform -translate-y-full opacity-0 z-50">
             <ul class="flex flex-col items-center space-y-4 py-6">
                 <li>
-                    <a href="#home"
-                       class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Главная</a>
+                    <a href="#home" class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Главная</a>
                 </li>
                 <li>
-                    <a href="#services"
-                       class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Услуги</a>
+                    <a href="#services" class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Услуги</a>
                 </li>
                 <li>
-                    <a href="#portfolio"
-                       class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Портфолио</a>
+                    <a href="#portfolio" class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Портфолио</a>
                 </li>
                 <li>
-                    <a href="#contact"
-                       class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Контакты</a>
+                    <a href="#contact" class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">Контакты</a>
                 </li>
                 <li>
-                    <a href="tel:+79268281855"
-                       class="text-sm font-montserrat text-white hover:text-orange-500 transition-colors duration-200">
-                        Заказать
-                        звонок
-                    </a>
+                    <a href="tel:+79268281855" class="btn-primary py-1 lg:py-2 px-2 lg:px-4 text-sm font-montserrat">Заказать звонок</a>
                 </li>
             </ul>
         </div>
@@ -148,7 +130,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="details-content font-open-sans text-sm">
+                    <div class="details-content font-open-sans text-sm" >
                         <p class="mb-2"><strong>Мы предлагаем разнообразные кровельные покрытия:</strong></p>
                         <ul class="list-disc pl-4">
                             <li>Металлочерепица</li>
@@ -332,9 +314,6 @@
             </div>
         </div>
     </section>
-
-
-
 
     <!-- Секция портфолио -->
     <section id="portfolio" class="py-16">
@@ -546,10 +525,6 @@
         </div>
     </section>
 
-
-
-
-
     <!-- Секция отзывов -->
     <section id="reviews">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -703,8 +678,6 @@
     </footer>
 
     <script src="script.js">
-
     </script>
 </body>
-
 </html>

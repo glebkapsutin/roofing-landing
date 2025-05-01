@@ -60,10 +60,7 @@
       background-color: #E55A2D;
   }
 
-  #mobile-menu {
-      display: none;
-  }
-
+ 
   /* Герой-секция */
   #home {
       background: linear-gradient(135deg, #1A1A1A 0%, #000000 100%);
@@ -189,9 +186,8 @@
 
   .details-content {
       position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
+      bottom:70px;
+      right: 0px;
       max-height: 0;
       opacity: 0;
       overflow: hidden;
