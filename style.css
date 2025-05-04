@@ -45,17 +45,7 @@ header {
     color: transparent;
 }
 
-.btn-primary {
-    background-color: rgb(221,176,53);
-    color: #fff;
-    border-radius: 8px;
-    font-weight: 600;
-}
 
-    .btn-primary:hover {
-        color: #fff;
-        background-color: rgb(212,161,18);
-    }
 
 /* Герой-секция */
 #home {
@@ -84,18 +74,37 @@ header {
         color: #B0B0B0;
     }
 
-    #home .btn-secondary {
-        background: transparent;
-        border: 2px solid #E0E0E0;
-        color: #E0E0E0;
-        border-radius: 8px;
-        font-weight: 600;
+.btn-primary {
+    background-color: rgb(221,176,53);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: rgb(212,161,18);
     }
 
-        #home .btn-secondary:hover {
-            background: #E0E0E0;
-            color: #1A1A1A;
-        }
+#home .btn-secondary {
+    background: transparent;
+    border: 2px solid #E0E0E0;
+    color: #E0E0E0;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+    #home .btn-secondary:hover {
+        background: #E0E0E0;
+        color: #1A1A1A;
+    }
+
+/* Скрытие кнопки "Заказать звонок" на десктопах */
+@media (min-width: 768px) {
+    .btn-call-mobile {
+        display: none;
+    }
+}
 
 /* Секция услуг */
 #services {
