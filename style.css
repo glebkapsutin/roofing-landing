@@ -49,7 +49,10 @@ header {
 
 /* Герой-секция */
 #home {
-    background: linear-gradient(135deg, #1A1A1A 0%, #000000 100%);
+    background: url('./assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -58,7 +61,7 @@ header {
 }
 
     #home .container {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.788);
         border-radius: 16px;
         padding: 2rem 1rem;
     }
@@ -335,6 +338,7 @@ header {
         background: #2A2A2A;
         border-radius: 12px;
         padding: 1.5rem;
+        max-width: 800px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
@@ -595,6 +599,18 @@ footer {
         height: 4.5rem;
     }
 }
+
+@media (max-width:375px) {
+    #home {
+        padding-top:2px;
+    }
+    #home h1 {
+        font-size: 25px;
+    }
+    #home p {
+        font-size: 14px;
+    }
+}
 #callback-popup {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
@@ -612,3 +628,5 @@ footer {
     #callback-popup.hidden .bg-[#1A1A1A] {
         transform: translateY(-20px);
     }
+
+

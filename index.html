@@ -11,6 +11,28 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                m[i].l = 1 * new Date();
+                for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+            })
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+            ym(101803028, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/101803028" style="position:absolute; left:-9999px;" alt="" /></div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="font-open-sans">
@@ -26,16 +48,20 @@
             <nav class="hidden md:flex">
                 <ul class="flex space-x-4 lg:space-x-6">
                     <li>
-                        <a href="#home" class="text-sm lg:text-base font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Главная</a>
+                        <a href="#home"
+                            class="text-sm lg:text-base font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Главная</a>
                     </li>
                     <li>
-                        <a href="#services" class="text-sm lg:text-base font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Услуги</a>
+                        <a href="#services"
+                            class="text-sm lg:text-base font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Услуги</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="text-sm lg:text-base font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Портфолио</a>
+                        <a href="#portfolio"
+                            class="text-sm lg:text-base font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Портфолио</a>
                     </li>
                     <li>
-                        <a href="#contact" class="text-sm lg:text-base font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Контакты</a>
+                        <a href="#contact"
+                            class="text-sm lg:text-base font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -46,30 +72,40 @@
                 <a href="https://wa.me/+79268281855" class="social-icon" aria-label="WhatsApp">
                     <img src="assets/logo/whatsapp.svg" alt="WhatsApp" class="w-9 h-9">
                 </a>
-                <button data-popup-open="true" class="btn-primary py-2 px-4 sm:px-6 text-sm sm:text-base font-montserrat font-semibold text-white bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] transition-colors duration-300 rounded-lg shadow-md">Заказать звонок</button>
+                <button data-popup-open="true"
+                    class="btn-primary py-2 px-4 sm:px-6 text-sm sm:text-base font-montserrat font-semibold text-white bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] transition-colors duration-300 rounded-lg shadow-md">Заказать
+                    звонок</button>
             </div>
-            <button id="mobile-menu-button" class="md:hidden focus:outline-none text-white" aria-label="Toggle mobile menu">
-                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none text-white"
+                aria-label="Toggle mobile menu">
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 hidden">
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" class="w-6 h-6 hidden">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
         </div>
-        <div id="mobile-menu" class="bg-[#0A0A0A] hidden md:hidden absolute top-full left-0 w-full shadow-lg transition-all duration-300 transform -translate-y-full opacity-0 z-50">
+        <div id="mobile-menu"
+            class="bg-[#0A0A0A] hidden md:hidden absolute top-full left-0 w-full shadow-lg transition-all duration-300 transform -translate-y-full opacity-0 z-50">
             <ul class="flex flex-col items-center space-y-4 py-6">
                 <li>
-                    <a href="#home" class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Главная</a>
+                    <a href="#home"
+                        class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Главная</a>
                 </li>
                 <li>
-                    <a href="#services" class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Услуги</a>
+                    <a href="#services"
+                        class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Услуги</a>
                 </li>
                 <li>
-                    <a href="#portfolio" class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Портфолио</a>
+                    <a href="#portfolio"
+                        class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Портфолио</a>
                 </li>
                 <li>
-                    <a href="#contact" class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Контакты</a>
+                    <a href="#contact"
+                        class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Контакты</a>
                 </li>
                 <li class="flex space-x-4">
                     <a href="https://t.me/+79268281855" class="social-icon" aria-label="Telegram">
@@ -80,7 +116,8 @@
                     </a>
                 </li>
                 <li>
-                    <button data-popup-open="true" class="btn-primary py-1 lg:py-2 px-2 lg:px-4 text-sm font-montserrat">Заказать звонок</button>
+                    <button data-popup-open="true"
+                        class="btn-primary py-1 lg:py-2 px-2 lg:px-4 text-sm font-montserrat">Заказать звонок</button>
                 </li>
             </ul>
         </div>
@@ -92,45 +129,56 @@
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-lg font-montserrat font-semibold text-white">Заказать звонок</h2>
                 <button id="popup-close" class="text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
             <form action="https://formspree.io/f/mnndpgqk" method="POST" class="space-y-4">
                 <div class="mb-4">
                     <label for="phone" class="block text-sm font-montserrat text-white mb-2">Номер телефона</label>
-                    <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 bg-[#0A0A0A] text-white rounded-lg border border-gray-600 focus:outline-none focus:border-[rgb(221,176,53)]" placeholder="+7 (___) ___-__-__" required>
+                    <input type="tel" id="phone" name="phone"
+                        class="w-full px-3 py-2 bg-[#0A0A0A] text-white rounded-lg border border-gray-600 focus:outline-none focus:border-[rgb(221,176,53)]"
+                        placeholder="+7 (___) ___-__-__" required>
                 </div>
                 <input type="hidden" name="_subject" value="Новая заявка с pop-up G-GROUP">
                 <input type="hidden" name="_next" value="https://g-group-krov-fasad.ru/thank-you">
-                <button type="submit" class="w-full py-2 px-4 bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] text-white font-montserrat font-semibold rounded-lg transition-colors duration-300">Отправить заявку</button>
+                <button type="submit"
+                    class="w-full py-2 px-4 bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] text-white font-montserrat font-semibold rounded-lg transition-colors duration-300">Отправить
+                    заявку</button>
             </form>
         </div>
     </div>
 
     <!-- Герой-секция -->
-    <!-- Герой-секция -->
     <section id="home">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 sm:pt-24 sm:pb-16 text-center">
-            <h1 class="font-montserrat animate__animated animate__fadeInDown mb-8">
-                Монтаж кровли и фасадов под ключ — от 500 ₽/м² с гарантией 3 года и рассрочкой 0% <span class="text-[rgb(221,176,53)]"> <br> в Москве и Подмосковье</span>
+            <h1 class="font-montserrat animate__animated animate__fadeInDown mb-8  ">
+                Монтаж кровли и фасадов под ключ — от 500 ₽/м² с гарантией 3 года и рассрочкой 0% <span
+                    class="text-[rgb(221,176,53)]"> <br> в Москве и Подмосковье</span>
             </h1>
-            <p class="mb-12 font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[rgb(221,176,53)] animate__animated animate__pulse animate__delay-2s drop-shadow-xl bg-gradient-to-r from-[rgba(221,176,53,0.15)] to-[rgba(221,176,53,0.05)] px-8 py-4 rounded-lg border border-[rgba(221,176,53,0.3)] shadow-[0_0_10px_rgba(221,176,53,0.3)] hover:shadow-[0_0_15px_rgba(221,176,53,0.5)] hover:scale-102 transition-all duration-300">
+            <p
+                class="mb-12  font-montserrat text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[rgb(221,176,53)] animate__animated animate__pulse animate__delay-2s drop-shadow-xl bg-gradient-to-r from-[rgba(221,176,53,0.15)] to-[rgba(221,176,53,0.05)] px-8 py-4 rounded-lg border border-[rgba(221,176,53,0.3)] shadow-[0_0_10px_rgba(221,176,53,0.3)] hover:shadow-[0_0_15px_rgba(221,176,53,0.5)] hover:scale-102 transition-all duration-300">
                 Работаем по всей Москве и области. Без посредников, только свои бригады из РФ.
 
             </p>
-            
-            <div class="animate__animated animate__fadeInUp animate__delay-2s flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                <a href="#contact" class="btn-primary py-3 px-6 sm:px-8 text-sm sm:text-base md:text-lg font-montserrat font-semibold text-white bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] transition-colors duration-300 rounded-lg shadow-lg flex items-center justify-center">
-                    Бесплатный расчёт
-                </a>
-                <a href="#services" class="btn-secondary py-3 px-6 sm:px-8 text-sm sm:text-base md:text-lg font-montserrat font-medium text-[rgb(221,176,53)] bg-transparent border-2 border-[rgb(221,176,53)] hover:bg-[rgb(221,176,53)] hover:text-white transition-all duration-300 rounded-lg flex items-center justify-center">
-                    Узнать больше
-                </a>
-                <a href="tel:+79268281855" class="btn-primary btn-call-mobile block md:hidden py-3 px-6 sm:px-8 text-sm sm:text-base md:text-lg font-montserrat font-semibold flex items-center justify-center">
-                    Заказать звонок
-                </a>
+
+            <div class="animate__animated animate__fadeInUp animate__delay-2s flex flex-col items-center space-y-3">
+                <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact"
+                        class="btn-primary py-3 px-6 sm:px-8 text-sm sm:text-base md:text-lg font-montserrat font-semibold text-white bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] transition-colors duration-300 rounded-lg shadow-lg flex items-center justify-center">
+                        Бесплатный расчёт
+                    </a>
+                    <a href="#services"
+                        class="btn-secondary hidden sm:flex py-3 px-6 sm:px-8 text-sm sm:text-base md:text-lg font-montserrat font-medium text-[rgb(221,176,53)] bg-transparent border-2 border-[rgb(221,176,53)] hover:bg-[rgb(221,176,53)] hover:text-white transition-all duration-300 rounded-lg items-center justify-center">
+                        Узнать больше
+                    </a>
+                </div>
+                <p class="text-sm sm:text-base text-gray-700 font-montserrat text-center">
+                    Получите точную смету с подбором материалов за 20 минут
+                </p>
             </div>
         </div>
     </section>
@@ -141,24 +189,32 @@
             <h2 class="text-center mb-4 font-montserrat">
                 Наши <span class="text-[rgb(221,176,53)]">услуги</span>
             </h2>
-            <p class="text-center mb-12 font-open-sans text-lg text-gray-400">Полный спектр строительных услуг в Москве и Московской области</p>
+            <p class="text-center mb-12 font-open-sans text-lg text-gray-400">Полный спектр строительных услуг в Москве
+                и Московской области</p>
             <div class="w-20 h-1 bg-[rgb(221,176,53)] mx-auto mb-12"></div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Монтаж кровли -->
                 <div class="service-card">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7m-9 9v-6h6v6m-6-6h6" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7m-9 9v-6h6v6m-6-6h6" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-center text-xl">Монтаж кровли</h3>
-                    <p class="mb-4 font-open-sans text-center text-gray-400 leading-relaxed">Качественная установка кровельных материалов с <span class="text-[rgb(221,176,53)]">гарантией долговечности</span></p>
+                    <p class="mb-4 font-open-sans text-center text-gray-400 leading-relaxed">Качественная установка
+                        кровельных материалов с <span class="text-[rgb(221,176,53)]">гарантией долговечности</span></p>
                     <div class="buttons flex justify-center gap-2">
-                        <a href="#contact" class="btn-primary py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center">Связаться</a>
-                        <button class="details-btn py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center gap-1">
+                        <a href="#contact"
+                            class="btn-primary py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center">Связаться</a>
+                        <button
+                            class="details-btn py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center gap-1">
                             <span>Подробнее</span>
-                            <svg class="arrow-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <svg class="arrow-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                     </div>
@@ -172,24 +228,32 @@
                             <li>Профнастил</li>
                             <li>Доборные элементы</li>
                         </ul>
-                        <p class="mt-2 leading-relaxed">Каждый материал подбирается с учётом ваших потребностей, обеспечивая <span class="text-[rgb(221,176,53)]">надёжную защиту</span> и эстетику.</p>
+                        <p class="mt-2 leading-relaxed">Каждый материал подбирается с учётом ваших потребностей,
+                            обеспечивая <span class="text-[rgb(221,176,53)]">надёжную защиту</span> и эстетику.</p>
                     </div>
                 </div>
                 <!-- Монтаж фасада -->
                 <div class="service-card">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a2 2 0 012-2h2a2 2 0 012 2v5m-4 0h4" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a2 2 0 012-2h2a2 2 0 012 2v5m-4 0h4" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-center text-xl">Монтаж фасада</h3>
-                    <p class="mb-4 font-open-sans text-center text-gray-400 leading-relaxed">Современные фасадные решения для <span class="text-[rgb(221,176,53)]">защиты и эстетики</span> вашего дома</p>
+                    <p class="mb-4 font-open-sans text-center text-gray-400 leading-relaxed">Современные фасадные
+                        решения для <span class="text-[rgb(221,176,53)]">защиты и эстетики</span> вашего дома</p>
                     <div class="buttons flex justify-center gap-2">
-                        <a href="#contact" class="btn-primary py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center">Связаться</a>
-                        <button class="details-btn py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center gap-1">
+                        <a href="#contact"
+                            class="btn-primary py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center">Связаться</a>
+                        <button
+                            class="details-btn py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center gap-1">
                             <span>Подробнее</span>
-                            <svg class="arrow-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <svg class="arrow-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                     </div>
@@ -204,24 +268,32 @@
                             <li>Металлический сайдинг</li>
                             <li>Доборные элементы</li>
                         </ul>
-                        <p class="mt-2 leading-relaxed">Обеспечиваем <span class="text-[rgb(221,176,53)]">эстетику</span> и защиту от внешних воздействий.</p>
+                        <p class="mt-2 leading-relaxed">Обеспечиваем <span
+                                class="text-[rgb(221,176,53)]">эстетику</span> и защиту от внешних воздействий.</p>
                     </div>
                 </div>
                 <!-- Внутренняя отделка и замена окон -->
                 <div class="service-card">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-center text-xl">Внутренняя отделка и замена окон</h3>
-                    <p class="mb-4 font-open-sans text-center text-gray-400 leading-relaxed">Обновление интерьера с <span class="text-[rgb(221,176,53)]">энергоэффективными окнами</span></p>
+                    <p class="mb-4 font-open-sans text-center text-gray-400 leading-relaxed">Обновление интерьера с
+                        <span class="text-[rgb(221,176,53)]">энергоэффективными окнами</span></p>
                     <div class="buttons flex justify-center gap-2">
-                        <a href="#contact" class="btn-primary py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center">Связаться</a>
-                        <button class="details-btn py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center gap-1">
+                        <a href="#contact"
+                            class="btn-primary py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center">Связаться</a>
+                        <button
+                            class="details-btn py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center gap-1">
                             <span>Подробнее</span>
-                            <svg class="arrow-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <svg class="arrow-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                     </div>
@@ -234,30 +306,40 @@
                             <li>Доска и шпунтованная доска</li>
                             <li>Молдинг, плинтуса и другие элементы</li>
                         </ul>
-                        <p class="mt-2 leading-relaxed">Создаём <span class="text-[rgb(221,176,53)]">комфортные пространства</span> с акцентом на функциональность.</p>
+                        <p class="mt-2 leading-relaxed">Создаём <span class="text-[rgb(221,176,53)]">комфортные
+                                пространства</span> с акцентом на функциональность.</p>
                     </div>
                 </div>
                 <!-- Строительство пристроек -->
                 <div class="service-card">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7h18M3 4h18M2 3h20a1 1 0 011 1v16a1 1 0 01-1 1H2a1 1 0 01-1-1V4a1 1 0 011-1z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7h18M3 4h18M2 3h20a1 1 0 011 1v16a1 1 0 01-1 1H2a1 1 0 01-1-1V4a1 1 0 011-1z" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-center text-xl">Строительство пристроек</h3>
-                    <p class="mb-4 font-open-sans text-center text-gray-400 leading-relaxed">Расширяем пространство с <span class="text-[rgb(221,176,53)]">соблюдением норм</span></p>
+                    <p class="mb-4 font-open-sans text-center text-gray-400 leading-relaxed">Расширяем пространство с
+                        <span class="text-[rgb(221,176,53)]">соблюдением норм</span></p>
                     <div class="buttons flex justify-center gap-2">
-                        <a href="#contact" class="btn-primary py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center">Связаться</a>
-                        <button class="details-btn py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center gap-1">
+                        <a href="#contact"
+                            class="btn-primary py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center">Связаться</a>
+                        <button
+                            class="details-btn py-2 px-4 text-sm md:text-base min-w-[100px] font-montserrat flex items-center justify-center gap-1">
                             <span>Подробнее</span>
-                            <svg class="arrow-icon w-4 h-4" fill="none" stroke="rgb(221,176,53)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <svg class="arrow-icon w-4 h-4" fill="none" stroke="rgb(221,176,53)" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                     </div>
                     <div class="details-content font-open-sans text-gray-300">
                         <p class="mb-2"><strong>Расширение вашего дома с заботой о деталях:</strong></p>
-                        <p class="leading-relaxed">Проектируем и строим пристройки, учитывая архитектуру дома и <span class="text-[rgb(221,176,53)]">строительные нормы</span>. Индивидуальные проекты для идеальной интеграции.</p>
+                        <p class="leading-relaxed">Проектируем и строим пристройки, учитывая архитектуру дома и <span
+                                class="text-[rgb(221,176,53)]">строительные нормы</span>. Индивидуальные проекты для
+                            идеальной интеграции.</p>
                     </div>
                 </div>
             </div>
@@ -275,48 +357,62 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
                 <div class="text-center">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-xl">Качество</h3>
-                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Используем сертифицированные материалы и современные технологии.</p>
+                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Используем
+                        сертифицированные материалы и современные технологии.</p>
                 </div>
                 <div class="text-center">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-xl">Профессионализм</h3>
-                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Команда опытных специалистов с многолетним стажем.</p>
+                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Команда опытных
+                        специалистов с многолетним стажем.</p>
                 </div>
                 <div class="text-center">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-xl">Скорость</h3>
-                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Соблюдаем сроки без потери качества.</p>
+                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Соблюдаем сроки без потери
+                        качества.</p>
                 </div>
                 <div class="text-center">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-xl">Гарантия</h3>
-                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Предоставляем гарантию на все виды работ.</p>
+                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Предоставляем гарантию на
+                        все виды работ.</p>
                 </div>
                 <div class="text-center">
                     <div class="text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)" class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="rgb(221,176,53)"
+                            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </div>
                     <h3 class="mb-2 font-montserrat text-xl">Индивидуальные проекты</h3>
-                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Разрабатываем и реализуем уникальные строительные проекты под ваши задачи.</p>
+                    <p class="font-open-sans text-gray-400 leading-relaxed max-w-xs mx-auto">Разрабатываем и реализуем
+                        уникальные строительные проекты под ваши задачи.</p>
                 </div>
             </div>
         </div>
@@ -328,7 +424,8 @@
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 font-montserrat text-white">
                 Наше <span class="text-[rgb(221,176,53)]">портфолио</span>
             </h2>
-            <p class="text-lg md:text-xl text-center mb-12 font-open-sans text-white">Примеры наших работ в Москве и Подмосковье</p>
+            <p class="text-lg md:text-xl text-center mb-12 font-open-sans text-white">Примеры наших работ в Москве и
+                Подмосковье</p>
             <div class="w-20 h-1 bg-[rgb(221,176,53)] mx-auto mb-12"></div>
 
             <!-- Категория: Кровля -->
@@ -338,46 +435,60 @@
                     <button class="gallery-btn prev-btn">❮</button>
                     <div class="portfolio-gallery" data-category="roofing">
                         <div class="portfolio-card" data-index="0">
-                            <img src="assets/img/roofing11.jpg" alt="Металлочерепица" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing11.jpg" alt="Металлочерепица"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="1">
-                            <img src="assets/img/roofing2.jpg" alt="Гибкая черепица" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing2.jpg" alt="Гибкая черепица"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="2">
-                            <img src="assets/img/roofing3.jpg" alt="Ремонт кровли" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing3.jpg" alt="Ремонт кровли"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="3">
-                            <img src="assets/img/roofing4.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing4.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="4">
-                            <img src="assets/img/roofing5.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing5.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="5">
-                            <img src="assets/img/roofing6.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing6.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="6">
-                            <img src="assets/img/roofing7.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing7.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="7">
-                            <img src="assets/img/roofing8.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing8.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="8">
-                            <img src="assets/img/roofing9.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing9.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="9">
-                            <img src="assets/img/roofing10.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing10.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="10">
-                            <img src="assets/img/roofing1.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing1.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="11">
-                            <img src="assets/img/roofing12.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing12.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="12">
-                            <img src="assets/img/roofing13.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing13.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="13">
-                            <img src="assets/img/roofing14.jpg" alt="Ремонт" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/roofing14.jpg" alt="Ремонт"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                     </div>
                     <button class="gallery-btn next-btn">❯</button>
@@ -391,49 +502,64 @@
                     <button class="gallery-btn prev-btn">❮</button>
                     <div class="portfolio-gallery" data-category="facade">
                         <div class="portfolio-card" data-index="0">
-                            <img src="assets/img/facad10.jpg" alt="Виниловый сайдинг" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad10.jpg" alt="Виниловый сайдинг"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="1">
-                            <img src="assets/img/facade2.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facade2.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="2">
-                            <img src="assets/img/facade3.jpg" alt="Металлический сайдинг" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facade3.jpg" alt="Металлический сайдинг"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="3">
-                            <img src="assets/img/facad4.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad4.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="4">
-                            <img src="assets/img/facad5.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad5.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="5">
-                            <img src="assets/img/facad6.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad6.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="6">
-                            <img src="assets/img/facad7.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad7.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="7">
-                            <img src="assets/img/facad8.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad8.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="8">
-                            <img src="assets/img/facad9.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad9.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="9">
-                            <img src="assets/img/facade1.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facade1.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="10">
-                            <img src="assets/img/facad11.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad11.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="11">
-                            <img src="assets/img/facad12.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad12.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="12">
-                            <img src="assets/img/facad13.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad13.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="13">
-                            <img src="assets/img/facad14.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad14.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="14">
-                            <img src="assets/img/facad15.jpg" alt="Фиброцементные панели" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/facad15.jpg" alt="Фиброцементные панели"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                     </div>
                     <button class="gallery-btn next-btn">❯</button>
@@ -447,28 +573,36 @@
                     <button class="gallery-btn prev-btn">❮</button>
                     <div class="portfolio-gallery" data-category="interior">
                         <div class="portfolio-card" data-index="0">
-                            <img src="assets/img/v8.jpg" alt="Имитация бруса" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/v8.jpg" alt="Имитация бруса"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="1">
-                            <img src="assets/img/interior2.jpg" alt="Замена окон" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/interior2.jpg" alt="Замена окон"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="2">
-                            <img src="assets/img/interior3.jpg" alt="Вагонка" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/interior3.jpg" alt="Вагонка"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="3">
-                            <img src="assets/img/v4.jpg" alt="Вагонка" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/v4.jpg" alt="Вагонка"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="4">
-                            <img src="assets/img/v5.jpg" alt="Вагонка" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/v5.jpg" alt="Вагонка"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="5">
-                            <img src="assets/img/v6.jpg" alt="Вагонка" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/v6.jpg" alt="Вагонка"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="6">
-                            <img src="assets/img/v7.jpg" alt="Вагонка" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/v7.jpg" alt="Вагонка"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="7">
-                            <img src="assets/img/interior1.jpg" alt="Вагонка" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/interior1.jpg" alt="Вагонка"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                     </div>
                     <button class="gallery-btn next-btn">❯</button>
@@ -482,19 +616,24 @@
                     <button class="gallery-btn prev-btn">❮</button>
                     <div class="portfolio-gallery" data-category="terrace">
                         <div class="portfolio-card" data-index="0">
-                            <img src="assets/img/terrace1.jpg" alt="Терраса" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/terrace1.jpg" alt="Терраса"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="1">
-                            <img src="assets/img/terrace2.jpg" alt="Пристройка" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/terrace2.jpg" alt="Пристройка"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="2">
-                            <img src="assets/img/terrace3.jpg" alt="Закрытая терраса" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/terrace3.jpg" alt="Закрытая терраса"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="3">
-                            <img src="assets/img/ter4.jpg" alt="Закрытая терраса" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/ter4.jpg" alt="Закрытая терраса"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                         <div class="portfolio-card" data-index="4">
-                            <img src="assets/img/ter5.jpg" alt="Закрытая терраса" class="w-full h-full object-cover rounded-xl shadow-lg">
+                            <img src="assets/img/ter5.jpg" alt="Закрытая терраса"
+                                class="w-full h-full object-cover rounded-xl shadow-lg">
                         </div>
                     </div>
                     <button class="gallery-btn next-btn">❯</button>
@@ -542,68 +681,37 @@
     <section id="contact">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-center mb-4 font-montserrat">
-                Свяжитесь <span class="text-[rgb(221,176,53)]">с нами</span>
+                Получите точный расчёт стоимости <span class="text-[rgb(221,176,53)]">за 20 минут</span>
             </h2>
-            <p class="text-center mb-12 font-open-sans">Оставьте заявку, и мы свяжемся с вами</p>
+            <p class="text-center mb-12 font-open-sans">Заполните короткую форму — и мы пришлём смету с подбором материалов.</p>
             <div class="w-20 h-1 bg-[rgb(221,176,53)] mx-auto mb-12"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="contact-card">
-                    <h3 class="text-xl font-semibold mb-4 font-montserrat">Контактная информация</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                 stroke="currentColor" class="w-5 sm:w-6 h-5 sm:h-6 mr-2">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                            <a href="tel:+79268281855" class="font-open-sans text-sm sm:text-base">+7 (926) 828-18-55</a>
-                        </div>
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                 stroke="currentColor" class="w-5 sm:w-6 h-5 sm:h-6 mr-2">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            <a href="mailto:g-group.roof.front@mail.ru"
-                               class="font-open-sans text-sm sm:text-base">g-group.roof.front@mail.ru</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="form-card">
-                    <h3 class="text-xl font-semibold mb-4 font-montserrat">Оставьте заявку</h3>
+            <div class="flex justify-center items-center">
+                <div class="form-card max-w-md w-full">
+               
                     <form action="https://formspree.io/f/mnndpgqk" method="POST" class="space-y-4">
                         <div class="mb-4">
                             <label for="name" class="block mb-2 font-open-sans text-sm sm:text-base text-gray-700">Имя</label>
-                            <input type="text"
-                                   id="name"
-                                   name="name"
-                                   class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[rgb(221,176,53)] focus:border-transparent text-sm sm:text-base placeholder-gray-400"
-                                   placeholder="Ваше имя"
-                                   required>
+                            <input type="text" id="name" name="name"
+                                class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[rgb(221,176,53)] focus:border-transparent text-sm sm:text-base placeholder-gray-400"
+                              required>
                         </div>
                         <div class="mb-4">
                             <label for="phone" class="block mb-2 font-open-sans text-sm sm:text-base text-gray-700">Телефон</label>
-                            <input type="tel"
-                                   id="phone"
-                                   name="phone"
-                                   class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[rgb(221,176,53)] focus:border-transparent text-sm sm:text-base placeholder-gray-400"
-                                   placeholder="+7 (XXX) XXX-XX-XX"
-                                   required>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[rgb(221,176,53)] focus:border-transparent text-sm sm:text-base placeholder-gray-400"
+                                 required>
                         </div>
                         <div class="mb-4">
                             <label for="email" class="block mb-2 font-open-sans text-sm sm:text-base text-gray-700">Email</label>
-                            <input type="email"
-                                   id="email"
-                                   name="email"
-                                   class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[rgb(221,176,53)] focus:border-transparent text-sm sm:text-base placeholder-gray-400"
-                                   placeholder="Ваш email">
+                            <input type="email" id="email" name="email"
+                                class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[rgb(221,176,53)] focus:border-transparent text-sm sm:text-base placeholder-gray-400"
+                                >
                         </div>
                         <input type="hidden" name="_subject" value="Новая заявка с сайта G-GROUP">
                         <input type="hidden" name="_next" value="https://g-group-krov-fasad.ru/">
                         <button type="submit"
-                                class="btn-primary w-full py-3 px-6 text-sm sm:text-base font-montserrat font-semibold text-white bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] transition-colors duration-300 rounded-lg shadow-md">
-                            Отправить заявку
+                            class="btn-primary w-full py-3 px-6 text-sm sm:text-base font-montserrat font-semibold text-white bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] transition-colors duration-300 rounded-lg shadow-md">
+                            Получить расчёт
                         </button>
                     </form>
                 </div>
@@ -617,7 +725,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div>
                     <img src="assets/logo/logotip.png" alt="G-GROUP Кровля и Фасады"
-                         class="h-12 sm:h-14 md:h-20 object-contain mb-4">
+                        class="h-12 sm:h-14 md:h-20 object-contain mb-4">
                     <p class="font-open-sans text-sm sm:text-base">
                         G-GROUP — ваш надёжный партнёр в строительстве кровли
                         и фасадов в Москве и Подмосковье.
@@ -628,20 +736,21 @@
                     <ul class="space-y-2">
                         <li class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                 stroke="currentColor" class="w-5 h-5 mr-2">
+                                stroke="currentColor" class="w-5 h-5 mr-2">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
-                            <a href="tel:+79268281855" class="font-open-sans text-sm sm:text-base">+7 (926) 828-18-55</a>
+                            <a href="tel:+79268281855" class="font-open-sans text-sm sm:text-base">+7 (926)
+                                828-18-55</a>
                         </li>
                         <li class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                 stroke="currentColor" class="w-5 h-5 mr-2">
+                                stroke="currentColor" class="w-5 h-5 mr-2">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                             <a href="mailto:g-group.roof.front@mail.ru"
-                               class="font-open-sans text-sm sm:text-base">g-group.roof.front@mail.ru</a>
+                                class="font-open-sans text-sm sm:text-base">g-group.roof.front@mail.ru</a>
                         </li>
 
                     </ul>
@@ -657,4 +766,5 @@
     <script src="script.js">
     </script>
 </body>
+
 </html>
