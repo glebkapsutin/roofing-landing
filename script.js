@@ -245,3 +245,65 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('callback-popup');
+    const openButtons = document.querySelectorAll('[data-popup-open="true"]');
+    const closeButton = document.getElementById('popup-close');
+    const form = document.getElementById('callback-form');
+    const formMessage = document.getElementById('form-message');
+
+    // Открытие pop-up
+    openButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            popup.classList.remove('hidden');
+            formMessage.classList.add('hidden'); // Скрыть сообщение при открытии
+        });
+    });
+
+    // Закрытие pop-up
+    closeButton.addEventListener('click', () => {
+        popup.classList.add('hidden');
+    });
+
+    // Закрытие при клике вне pop-up
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.classList.add('hidden');
+        }
+    });
+
+    // Обработка отправки формы
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        formMessage.classList.add('hidden');
+
+        const formData = new FormData(form);
+        try {
+            const response = await fetch('https://formspree.io/f/mnndpgqk', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                formMessage.classList.remove('hidden');
+                formMessage.classList.remove('text-red-400');
+                formMessage.classList.add('text-green-400');
+                formMessage.textContent = 'Заявка успешно отправлена!';
+                form.reset();
+                setTimeout(() => {
+                    popup.classList.add('hidden');
+                }, 2000); // Закрыть pop-up через 2 секунды
+            } else {
+                throw new Error('Ошибка отправки формы');
+            }
+        } catch (error) {
+            formMessage.classList.remove('hidden');
+            formMessage.classList.remove('text-green-400');
+            formMessage.classList.add('text-red-400');
+            formMessage.textContent = 'Ошибка при отправке. Попробуйте позже.';
+        }
+    });
+});

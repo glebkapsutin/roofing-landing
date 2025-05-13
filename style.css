@@ -568,3 +568,47 @@ footer {
         max-height: 80vh;
     }
 }
+/* Стили для социальных иконок */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+    .social-icon:hover {
+        transform: scale(1.1);
+        color: rgb(221,176,53);
+    }
+
+/* Адаптивность для иконок */
+@media (max-width: 1024px) {
+    .social-icon svg {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .social-icon svg {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+#callback-popup {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+    #callback-popup.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #callback-popup .bg-[#1A1A1A] {
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+    }
+
+    #callback-popup.hidden .bg-[#1A1A1A] {
+        transform: translateY(-20px);
+    }

@@ -14,6 +14,7 @@
 </head>
 
 <body class="font-open-sans">
+    <!-- Header -->
     <header class="fixed top-0 w-full z-50 bg-[#0A0A0A]">
         <div class="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
             <a href="#home" class="flex items-center space-x-3">
@@ -39,7 +40,13 @@
                 </ul>
             </nav>
             <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
-                <a href="tel:+79268281855" class="btn-primary py-2 px-4 sm:px-6 text-sm sm:text-base font-montserrat font-semibold text-white bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] transition-colors duration-300 rounded-lg shadow-md">Заказать звонок</a>
+                <a href="https://t.me/+79268281855" class="social-icon" aria-label="Telegram">
+                    <img src="assets/logo/telegram.svg" alt="Telegram" class="w-10 h-10">
+                </a>
+                <a href="https://wa.me/+79268281855" class="social-icon" aria-label="WhatsApp">
+                    <img src="assets/logo/whatsapp.svg" alt="WhatsApp" class="w-9 h-9">
+                </a>
+                <button data-popup-open="true" class="btn-primary py-2 px-4 sm:px-6 text-sm sm:text-base font-montserrat font-semibold text-white bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] transition-colors duration-300 rounded-lg shadow-md">Заказать звонок</button>
             </div>
             <button id="mobile-menu-button" class="md:hidden focus:outline-none text-white" aria-label="Toggle mobile menu">
                 <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
@@ -64,12 +71,44 @@
                 <li>
                     <a href="#contact" class="text-sm font-montserrat text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">Контакты</a>
                 </li>
+                <li class="flex space-x-4">
+                    <a href="https://t.me/+79268281855" class="social-icon" aria-label="Telegram">
+                        <img src="assets/logo/telegram.svg" alt="Telegram" class="w-10 h-10">
+                    </a>
+                    <a href="https://wa.me/+79268281855" class="social-icon" aria-label="WhatsApp">
+                        <img src="assets/logo/whatsapp.svg" alt="WhatsApp" class="w-9 h-9">
+                    </a>
+                </li>
                 <li>
-                    <a href="tel:+79268281855" class="btn-primary py-1 lg:py-2 px-2 lg:px-4 text-sm font-montserrat">Заказать звонок</a>
+                    <button data-popup-open="true" class="btn-primary py-1 lg:py-2 px-2 lg:px-4 text-sm font-montserrat">Заказать звонок</button>
                 </li>
             </ul>
         </div>
     </header>
+
+    <!-- Popup окно -->
+    <div id="callback-popup" class="fixed inset-0 bg-[#0A0A0A]/80 hidden flex items-center justify-center z-50">
+        <div class="bg-[#1A1A1A] p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-montserrat font-semibold text-white">Заказать звонок</h2>
+                <button id="popup-close" class="text-white hover:text-[rgb(221,176,53)] transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <form id="callback-form" action="https://formspree.io/f/mnndpgqk" method="POST" class="space-y-4">
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-montserrat text-white mb-2">Номер телефона</label>
+                    <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 bg-[#0A0A0A] text-white rounded-lg border border-gray-600 focus:outline-none focus:border-[rgb(221,176,53)]" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <input type="hidden" name="_subject" value="Новая заявка с pop-up G-GROUP">
+                <input type="hidden" name="_next" value="https://g-group-krov-fasad.ru/">
+                <div id="form-message" class="hidden text-sm text-green-400"></div>
+                <button type="submit" class="w-full py-2 px-4 bg-[rgb(221,176,53)] hover:bg-[rgb(200,160,40)] text-white font-montserrat font-semibold rounded-lg transition-colors duration-300">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Герой-секция -->
     <!-- Герой-секция -->
