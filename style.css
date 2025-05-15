@@ -28,18 +28,18 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-    header a,
-    header button {
-        color: #E0E0E0;
-    }
+header a,
+header button {
+    color: #E0E0E0;
+}
 
-        header a:hover,
-        header button:hover {
-            color: rgb(221,176,53);
-        }
+header a:hover,
+header button:hover {
+    color: rgb(221, 176, 53);
+}
 
 .logo-text {
-    background: linear-gradient(to right, rgb(220,176,53), rgb(221,176,53));
+    background: linear-gradient(to right, rgb(220, 176, 53), rgb(221, 176, 53));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -60,34 +60,34 @@ header {
     text-align: center;
 }
 
-    #home .container {
-        background: rgba(0, 0, 0, 0.568);
-        border-radius: 16px;
-        padding: 2rem 1rem;
-    }
+#home .container {
+    background: rgba(0, 0, 0, 0.568);
+    border-radius: 16px;
+    padding: 2rem 1rem;
+}
 
-    #home h1 {
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        font-weight: 700;
-        line-height: 1.2;
-    }
+#home h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
 
-    #home p {
-        font-size: clamp(1rem, 2.5vw, 1.25rem);
-        color: #B0B0B0;
-    }
+#home p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #B0B0B0;
+}
 
 .btn-primary {
-    background-color: rgb(221,176,53);
+    background-color: rgb(221, 176, 53);
     color: #fff;
     border-radius: 8px;
     font-weight: 600;
 }
 
-    .btn-primary:hover {
-        color: #fff;
-        background-color: rgb(212,161,18);
-    }
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(212, 161, 18);
+}
 
 #home .btn-secondary {
     background: transparent;
@@ -97,10 +97,10 @@ header {
     font-weight: 600;
 }
 
-    #home .btn-secondary:hover {
-        background: #E0E0E0;
-        color: #1A1A1A;
-    }
+#home .btn-secondary:hover {
+    background: #E0E0E0;
+    color: #1A1A1A;
+}
 
 /* Скрытие кнопки "Заказать звонок" на десктопах */
 @media (min-width: 768px) {
@@ -115,15 +115,15 @@ header {
     padding: 4rem 1rem;
 }
 
-    #services h2 {
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
-        font-weight: 700;
-    }
+#services h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+}
 
-    #services p {
-        font-size: clamp(0.875rem, 2vw, 1.125rem);
-        color: #B0B0B0;
-    }
+#services p {
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    color: #B0B0B0;
+}
 
 .service-card {
     background: #2A2A2A;
@@ -138,27 +138,27 @@ header {
     border: 1px solid transparent;
 }
 
-    .service-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    }
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
 
-    .service-card svg {
-        color: rgb(221,176,53);
-    }
+.service-card svg {
+    color: rgb(221, 176, 53);
+}
 
-    .service-card h3 {
-        color: #E0E0E0;
-        font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-        font-weight: 600;
-    }
+.service-card h3 {
+    color: #E0E0E0;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+}
 
-    .service-card p {
-        color: #B0B0B0;
-        font-size: clamp(1rem, 1.5vw, 1.125rem);
-        flex-grow: 1;
-        line-height: 1.7;
-    }
+.service-card p {
+    color: #B0B0B0;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    flex-grow: 1;
+    line-height: 1.7;
+}
 
 .buttons {
     display: flex;
@@ -168,8 +168,8 @@ header {
 
 .details-btn {
     background: transparent;
-    border: 2px solid rgb(221,176,53);
-    color: rgb(221,176,53);
+    border: 2px solid rgb(221, 176, 53);
+    color: rgb(221, 176, 53);
     border-radius: 8px;
     font-weight: 600;
     display: flex;
@@ -177,18 +177,18 @@ header {
     gap: 0.5rem;
 }
 
-    .details-btn:hover {
-        background: rgb(221,176,53);
-        color: #fff;
-    }
+.details-btn:hover {
+    background: rgb(221, 176, 53);
+    color: #fff;
+}
 
-        .details-btn:hover .arrow-icon {
-            transform: translateY(2px);
-        }
+.details-btn:hover .arrow-icon {
+    transform: translateY(2px);
+}
 
-    .details-btn.active .arrow-icon {
-        transform: rotate(180deg);
-    }
+.details-btn.active .arrow-icon {
+    transform: rotate(180deg);
+}
 
 .arrow-icon {
     transition: transform 0.3s ease;
@@ -201,37 +201,46 @@ header {
     left: 0;
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
+    overflow-y: scroll;
     background: #3A3A3A;
     border-radius: 8px;
     padding: 0 1.25rem;
     margin: 0.5rem 1rem;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
     z-index: 10;
-   
+    height: 300px;
+
+
 }
 
-    .details-content.show {
-        max-height: 500px;
-        opacity: 1;
-        padding: 1rem;
-    }
+.details-content img {
+    width:145px;
+}
 
-    .details-content p {
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.7;
-        color: #E0E0E0;
-    }
+ 
 
-    .details-content ul {
-        margin-bottom: 0.5rem;
-    }
+.details-content.show {
+    max-height: 500px;
+    opacity: 1;
+    padding: 1rem;
+}
 
-    .details-content li {
-        margin-bottom: 0.25rem;
-        color: #E0E0E0;
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-    }
+.details-content p {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.7;
+    color: #E0E0E0;
+}
+
+.details-content ul {
+    margin-bottom: 0.5rem;
+}
+
+.details-content li {
+    margin-bottom: 0.25rem;
+    color: #E0E0E0;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+
 /* Медиа-запросы для iPad */
 @media (max-width: 1024px) {
     .details-content.show {
@@ -246,35 +255,35 @@ header {
     padding: 4rem 1rem;
 }
 
-    #why-us h2 {
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
-        font-weight: 700;
-    }
+#why-us h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+}
 
-    #why-us p {
-        font-size: clamp(0.875rem, 2vw, 1.125rem);
-        color: #B0B0B0;
-        line-height: 1.7;
-    }
+#why-us p {
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    color: #B0B0B0;
+    line-height: 1.7;
+}
 
-    #why-us svg {
-        color: rgb(221,176,53);
-    }
+#why-us svg {
+    color: rgb(221, 176, 53);
+}
 
-    #why-us h3 {
-        font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-        font-weight: 600;
-    }
+#why-us h3 {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+}
 
-    #why-us .text-center {
-        transition: transform 0.3s ease;
-        min-width: 160px;
-        padding: 0.5rem;
-    }
+#why-us .text-center {
+    transition: transform 0.3s ease;
+    min-width: 160px;
+    padding: 0.5rem;
+}
 
-        #why-us .text-center:hover {
-            transform: translateY(-8px);
-        }
+#why-us .text-center:hover {
+    transform: translateY(-8px);
+}
 
 /* Остальные стили (без изменений) */
 
@@ -284,37 +293,37 @@ header {
     padding: 4rem 1rem;
 }
 
-    #reviews h2 {
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
-        font-weight: 700;
-    }
+#reviews h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+}
 
-    #reviews p {
-        font-size: clamp(0.875rem, 2vw, 1.125rem);
-        color: #B0B0B0;
-    }
+#reviews p {
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    color: #B0B0B0;
+}
 
-    #reviews .review-card {
-        background: #2A2A2A;
-        border-radius: 12px;
-        padding: 1.5rem;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
+#reviews .review-card {
+    background: #2A2A2A;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
-        #reviews .review-card p {
-            color: #B0B0B0;
-        }
+#reviews .review-card p {
+    color: #B0B0B0;
+}
 
-        #reviews .review-card h3 {
-            color: #E0E0E0;
-            font-size: clamp(0.875rem, 2vw, 1.125rem);
-            font-weight: 600;
-        }
+#reviews .review-card h3 {
+    color: #E0E0E0;
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    font-weight: 600;
+}
 
-        #reviews .review-card .location {
-            color: #6B7280;
-            font-size: clamp(0.75rem, 1.5vw, 0.875rem);
-        }
+#reviews .review-card .location {
+    color: #6B7280;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
 
 /* Секция контактов */
 #contact {
@@ -322,54 +331,54 @@ header {
     padding: 4rem 1rem;
 }
 
-    #contact h2 {
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
-        font-weight: 700;
-        color: #E0E0E0;
-    }
+#contact h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #E0E0E0;
+}
 
-    #contact p {
-        font-size: clamp(0.875rem, 2vw, 1.125rem);
-        color: #B0B0B0;
-    }
+#contact p {
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    color: #B0B0B0;
+}
 
-    #contact .contact-card,
-    #contact .form-card {
-        background: #2A2A2A;
-        border-radius: 12px;
-        padding: 1.5rem;
-        max-width: 800px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
+#contact .contact-card,
+#contact .form-card {
+    background: #2A2A2A;
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 800px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
-    #contact svg {
-        color: rgb(221,176,53);
-    }
+#contact svg {
+    color: rgb(221, 176, 53);
+}
 
-    #contact a,
-    #contact p {
-        color: #B0B0B0;
-    }
+#contact a,
+#contact p {
+    color: #B0B0B0;
+}
 
-        #contact a:hover {
-            color: rgb(221,176,53);
-        }
+#contact a:hover {
+    color: rgb(221, 176, 53);
+}
 
-    #contact input {
-        background: #3A3A3A;
-        border: 1px solid #4A4A4A;
-        color: #E0E0E0;
-        border-radius: 8px;
-    }
+#contact input {
+    background: #3A3A3A;
+    border: 1px solid #4A4A4A;
+    color: #E0E0E0;
+    border-radius: 8px;
+}
 
-        #contact input:focus {
-            border-color: rgb(221,176,53);
-            outline: none;
-        }
+#contact input:focus {
+    border-color: rgb(221, 176, 53);
+    outline: none;
+}
 
-    #contact label {
-        color: #B0B0B0;
-    }
+#contact label {
+    color: #B0B0B0;
+}
 
 /* Футер */
 footer {
@@ -378,28 +387,28 @@ footer {
     border-top: 1px solid #2A2A2A;
 }
 
-    footer h3 {
-        font-size: clamp(1rem, 2.5vw, 1.25rem);
-        font-weight: 600;
-        color: #E0E0E0;
-    }
+footer h3 {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 600;
+    color: #E0E0E0;
+}
 
-    footer p,
-    footer a {
-        color: #B0B0B0;
-    }
+footer p,
+footer a {
+    color: #B0B0B0;
+}
 
-        footer a:hover {
-            color: rgb(221,176,53);
-        }
+footer a:hover {
+    color: rgb(221, 176, 53);
+}
 
-    footer svg {
-        color: rgb(221,176,53);
-    }
+footer svg {
+    color: rgb(221, 176, 53);
+}
 
-    footer .social-icon:hover {
-        color: rgb(221,176,53);
-    }
+footer .social-icon:hover {
+    color: rgb(221, 176, 53);
+}
 
 /* Стили для секции портфолио */
 .portfolio-gallery-container {
@@ -426,17 +435,17 @@ footer {
     cursor: pointer;
 }
 
-    .portfolio-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    }
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
 
-    .portfolio-card img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 1rem;
-    }
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
 
 .gallery-btn {
     position: absolute;
@@ -453,15 +462,15 @@ footer {
     z-index: 10;
 }
 
-    .gallery-btn:hover {
-        background: rgba(0, 0, 0, 0.8);
-        transform: translateY(-50%) scale(1.1);
-    }
+.gallery-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
 
-    .gallery-btn.disabled {
-        opacity: 0.3;
-        cursor: not-allowed;
-    }
+.gallery-btn.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
 
 .portfolio-gallery-container .gallery-btn.prev-btn {
     left: 1rem;
@@ -475,10 +484,10 @@ footer {
     visibility: hidden;
 }
 
-    .portfolio-gallery-container .gallery-btn.next-btn.visible {
-        opacity: 1;
-        visibility: visible;
-    }
+.portfolio-gallery-container .gallery-btn.next-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
 
 .modal {
     position: fixed;
@@ -502,12 +511,12 @@ footer {
     justify-content: center;
 }
 
-    .modal-content img {
-        max-width: 100%;
-        max-height: 90vh;
-        object-fit: contain;
-        border-radius: 0.5rem;
-    }
+.modal-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
 
 .modal-close-btn {
     position: absolute;
@@ -522,9 +531,9 @@ footer {
     transition: transform 0.3s ease;
 }
 
-    .modal-close-btn:hover {
-        transform: scale(1.2);
-    }
+.modal-close-btn:hover {
+    transform: scale(1.2);
+}
 
 .modal-nav-btn {
     position: absolute;
@@ -540,10 +549,10 @@ footer {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-    .modal-nav-btn:hover {
-        background: rgba(0, 0, 0, 0.8);
-        transform: translateY(-50%) scale(1.1);
-    }
+.modal-nav-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
 
 .modal-prev-btn {
     left: 1rem;
@@ -572,6 +581,7 @@ footer {
         max-height: 80vh;
     }
 }
+
 /* Стили для социальных иконок */
 .social-icon {
     display: inline-flex;
@@ -580,10 +590,10 @@ footer {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-    .social-icon:hover {
-        transform: scale(1.1);
-        color: rgb(221,176,53);
-    }
+.social-icon:hover {
+    transform: scale(1.1);
+    color: rgb(221, 176, 53);
+}
 
 /* Адаптивность для иконок */
 @media (max-width: 1024px) {
@@ -602,31 +612,32 @@ footer {
 
 @media (max-width:375px) {
     #home {
-        padding-top:2px;
+        padding-top: 2px;
     }
+
     #home h1 {
         font-size: 25px;
     }
+
     #home p {
         font-size: 14px;
     }
 }
+
 #callback-popup {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-    #callback-popup.hidden {
-        opacity: 0;
-        visibility: hidden;
-    }
+#callback-popup.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
 
-    #callback-popup .bg-[#1A1A1A] {
-        transform: translateY(0);
-        transition: transform 0.3s ease;
-    }
+#callback-popup .bg-[#1A1A1A] {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
 
-    #callback-popup.hidden .bg-[#1A1A1A] {
-        transform: translateY(-20px);
-    }
-
-
+#callback-popup.hidden .bg-[#1A1A1A] {
+    transform: translateY(-20px);
+}
