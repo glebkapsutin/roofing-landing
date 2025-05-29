@@ -65,6 +65,11 @@ header button:hover {
     border-radius: 16px;
     padding: 2rem 1rem;
 }
+@media (max-width: 375px) {
+    #home .container {
+        padding-top: 9rem; /* 112px, больше отступ сверху для маленьких экранов */
+    }
+}
 
 #home h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
@@ -112,6 +117,7 @@ header button:hover {
         display: none;
     }
 }
+
 
 /* Секция услуг */
 #services {
