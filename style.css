@@ -72,7 +72,7 @@ header button:hover {
     }
 
         #home .container {
-            margin-top: 100px; /* Отступ для хедера (~60-80px) + статус-бар (~20-44px) */
+            margin-top: 140px; /* Отступ для хедера (~60-80px) + статус-бар (~20-44px) */
         }
 }
 
