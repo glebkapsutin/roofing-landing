@@ -68,11 +68,12 @@ header button:hover {
 
 @media (max-width: 375px) {
     #home {
-        align-items: flex-start; /* Контент начинается сверху */
+        align-items: flex-start; /* Контент сверху */
+        min-height: calc(100vh + env(safe-area-inset-top)); /* Учитываем статус-бар */
     }
 
         #home .container {
-            margin-top: 140px; /* Отступ для хедера (~60-80px) + статус-бар (~20-44px) */
+            margin-top: calc(80px + env(safe-area-inset-top)) !important; /* Хедер (~60-80px) + статус-бар */
         }
 }
 
