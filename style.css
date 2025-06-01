@@ -67,7 +67,12 @@ header button:hover {
 }
 @media (max-width: 375px) {
     #home .container {
-        padding-top: 9rem; /* 112px, больше отступ сверху для маленьких экранов */
+        padding-top: 10rem; /* 112px, больше отступ сверху для маленьких экранов */
+    }
+}
+@media (max-width: 350px) {
+    #home .container {
+        padding-top: 12rem; /* 112px, больше отступ сверху для маленьких экранов */
     }
 }
 
