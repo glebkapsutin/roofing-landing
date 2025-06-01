@@ -65,15 +65,57 @@ header button:hover {
     border-radius: 16px;
     padding: 2rem 1rem;
 }
+
 @media (max-width: 375px) {
-    #home .container {
-        padding-top: 10rem; /* 112px, больше отступ сверху для маленьких экранов */
+    #home {
+        align-items: flex-start; /* Контент начинается сверху */
     }
+
+        #home .container {
+            margin-top: 100px; /* Отступ для хедера (~60-80px) + статус-бар (~20-44px) */
+        }
 }
-@media (max-width: 350px) {
+
+
+
+/* Адаптивность для экранов ≤320px (iPhone 4) */
+@media (max-width: 320px) {
     #home .container {
-        padding-top: 12rem; /* 112px, больше отступ сверху для маленьких экранов */
+        margin-top: 55px; /* Отступ для хедера (~60-80px) + статус-бар (~20-44px) */
     }
+
+
+        #home h1 {
+            font-size: clamp(0.875rem, 4vw, 1rem); /* Ещё меньший шрифт */
+            line-height: 1.4; /* Читаемость */
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* Тень для контраста */
+        }
+
+        #home h2 {
+            font-size: clamp(0.75rem, 3.5vw, 0.875rem); /* Ещё меньший шрифт */
+            margin-bottom: 0.5rem; /* Уменьшаем отступ */
+        }
+
+        #home p:first-of-type {
+            font-size: clamp(0.625rem, 3vw, 0.75rem); /* Ещё меньший шрифт */
+            padding: 0.25rem; /* Минимизируем padding */
+            line-height: 1.4; /* Читаемость */
+            text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* Тень для контраста */
+        }
+
+        #home p:last-of-type {
+            font-size: clamp(0.625rem, 2.5vw, 0.75rem); /* Сохраняем шрифт */
+            color: #FFFFFF; /* Максимальный контраст */
+            padding: 0 0.25rem; /* Минимальные отступы */
+        }
+
+        #home .btn-primary,
+        #home .btn-secondary {
+            font-size: clamp(0.625rem, 2.5vw, 0.75rem); /* Сохраняем шрифт */
+            padding: 0.5rem 0.75rem; /* Сохраняем padding */
+            max-width: 160px; /* Ещё меньше ширина кнопок */
+        }
 }
 
 #home h1 {
