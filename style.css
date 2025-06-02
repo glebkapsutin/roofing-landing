@@ -65,18 +65,26 @@ header button:hover {
     border-radius: 16px;
     padding: 2rem 1rem;
 }
-
-@media (max-width: 375px) {
+@media (max-width: 390px) {
     #home {
         align-items: flex-start; /* Контент сверху */
-        min-height: calc(100vh + env(safe-area-inset-top)); /* Учитываем статус-бар */
+        min-height: 100vh; /* Учитываем статус-бар */
     }
 
         #home .container {
-            margin-top: calc(80px + env(safe-area-inset-top)) !important; /* Хедер (~60-80px) + статус-бар */
+            margin-top: 70px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
         }
 }
+@media (max-width: 375px) {
+    #home {
+        align-items: flex-start; /* Контент сверху */
+        min-height: 100vh; /* Учитываем статус-бар */
+    }
 
+        #home .container {
+            margin-top: 100px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
+        }
+}
 
 
 /* Адаптивность для экранов ≤320px (iPhone 4) */
