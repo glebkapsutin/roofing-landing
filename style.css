@@ -72,7 +72,7 @@ header button:hover {
     }
 
         #home .container {
-            margin-top: 70px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
+            margin-top: 50px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
         }
 }
 @media (max-width: 375px) {
@@ -82,7 +82,7 @@ header button:hover {
     }
 
         #home .container {
-            margin-top: 100px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
+            margin-top: 90px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
         }
 }
 
