@@ -390,7 +390,30 @@ header button:hover {
     color: #6B7280;
     font-size: clamp(0.75rem, 1.5vw, 0.875rem);
 }
+.review-card .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
 
+.review-card .star {
+    color: rgb(221, 176, 53);
+    font-size: 1.2rem;
+}
+
+.review-card .star.empty {
+    color: #ccc;
+}
+
+.review-card .rating-text {
+    color: #666;
+    margin-left: 8px;
+}
+
+.review-card .source {
+    margin-top: 8px;
+}
 /* Секция контактов */
 #contact {
     background: #1A1A1A;
