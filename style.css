@@ -65,11 +65,76 @@ header button:hover {
     border-radius: 16px;
     padding: 2rem 1rem;
 }
+@media (max-width: 390px) {
+    #home {
+        align-items: flex-start; /* Контент сверху */
+        min-height: 100vh; /* Учитываем статус-бар */
+    }
+
+        #home .container {
+            margin-top: 50px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
+        }
+}
+@media (max-width: 375px) {
+    #home {
+        align-items: flex-start; /* Контент сверху */
+        min-height: 100vh; /* Учитываем статус-бар */
+    }
+
+        #home .container {
+            margin-top: 90px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
+        }
+}
+
+
+/* Адаптивность для экранов ≤320px (iPhone 4) */
+@media (max-width: 320px) {
+    #home .container {
+        margin-top: 55px; /* Отступ для хедера (~60-80px) + статус-бар (~20-44px) */
+    }
+
+
+        #home h1 {
+            font-size: clamp(0.875rem, 4vw, 1rem); /* Ещё меньший шрифт */
+            line-height: 1.4; /* Читаемость */
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* Тень для контраста */
+        }
+
+        #home h2 {
+            font-size: clamp(0.75rem, 3.5vw, 0.875rem); /* Ещё меньший шрифт */
+            margin-bottom: 0.5rem; /* Уменьшаем отступ */
+        }
+
+        #home p:first-of-type {
+            font-size: clamp(0.625rem, 3vw, 0.75rem); /* Ещё меньший шрифт */
+            padding: 0.25rem; /* Минимизируем padding */
+            line-height: 1.4; /* Читаемость */
+            text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* Тень для контраста */
+        }
+
+        #home p:last-of-type {
+            font-size: clamp(0.625rem, 2.5vw, 0.75rem); /* Сохраняем шрифт */
+            color: #FFFFFF; /* Максимальный контраст */
+            padding: 0 0.25rem; /* Минимальные отступы */
+        }
+
+        #home .btn-primary,
+        #home .btn-secondary {
+            font-size: clamp(0.625rem, 2.5vw, 0.75rem); /* Сохраняем шрифт */
+            padding: 0.5rem 0.75rem; /* Сохраняем padding */
+            max-width: 160px; /* Ещё меньше ширина кнопок */
+        }
+}
 
 #home h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
     line-height: 1.2;
+}
+#home h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
 }
 
 #home p {
@@ -108,6 +173,7 @@ header button:hover {
         display: none;
     }
 }
+
 
 /* Секция услуг */
 #services {
@@ -324,7 +390,30 @@ header button:hover {
     color: #6B7280;
     font-size: clamp(0.75rem, 1.5vw, 0.875rem);
 }
+.review-card .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
 
+.review-card .star {
+    color: rgb(221, 176, 53);
+    font-size: 1.2rem;
+}
+
+.review-card .star.empty {
+    color: #ccc;
+}
+
+.review-card .rating-text {
+    color: #666;
+    margin-left: 8px;
+}
+
+.review-card .source {
+    margin-top: 8px;
+}
 /* Секция контактов */
 #contact {
     background: #1A1A1A;
