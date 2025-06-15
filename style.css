@@ -413,7 +413,7 @@ footer .social-icon:hover {
 /* Стили для секции портфолио */
 .portfolio-gallery-container {
     position: relative;
-    width: 100%;
+    width:100%;
     overflow: hidden;
 }
 
