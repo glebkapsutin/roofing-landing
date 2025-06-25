@@ -70,6 +70,9 @@ header button:hover {
         align-items: flex-start; /* Контент сверху */
         min-height: 100vh; /* Учитываем статус-бар */
     }
+    #home .container {
+        margin-top: 50px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
+    }
 
        
 }
@@ -77,6 +80,9 @@ header button:hover {
     #home {
         align-items: flex-start; /* Контент сверху */
         min-height: 100vh; /* Учитываем статус-бар */
+    }
+    #home .container {
+        margin-top: 50px; /* Увеличено до 140px для хедера (~60-80px) + статус-бар (~44px) + запас */
     }
 
         
